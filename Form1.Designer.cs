@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnLoad = new Button();
+            SuspendLayout();
+            // 
+            // btnLoad
+            // 
+            btnLoad.Location = new Point(12, 12);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(360, 337);
+            btnLoad.TabIndex = 0;
+            btnLoad.Text = "Wgraj Plik";
+            btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click_1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(384, 361);
+            Controls.Add(btnLoad);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnLoad;
     }
 }
